@@ -17,8 +17,8 @@ const config: Config = {
     },
     colors: {
       ...colors,
-      primary: colors.blue,
-      secondary: colors.purple,
+      primary: colors.green,
+      secondary: colors.blue,
     },
   },
   plugins: [],
