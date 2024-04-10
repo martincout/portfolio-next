@@ -9,6 +9,7 @@ const HeroSection = () => {
   return (
     <section className="lg:py-16">
     <div className="grid grid-cols-1 sm:grid-cols-12">
+   
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -28,7 +29,7 @@ const HeroSection = () => {
               1000,
               "Backend Developer",
               1000,
-              "UI/UX Designer",
+              "Mobile Developer",
               1000,
             ]}
             wrapper="span"

@@ -9,12 +9,13 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>.NET</li>
+        <li>.NET C#</li>
         <li>SQL Server</li>
-        <li>JavaScript</li>
+        <li>Node JS</li>
+        <li>Javascript</li>
         <li>Angular</li>
+        <li>React</li>
+        <li>Power BI</li>
       </ul>
     ),
   },
@@ -23,8 +24,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>Fullstack Academy of Code (Platzi)</li>
+        <li>Northeast National University UNNE, Corrientes</li>
       </ul>
     ),
   },
@@ -59,8 +60,8 @@ const AboutSection = () => {
           <p className="text-base lg:text-lg">
             I am a full stack web developer with a passion for creating
             interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
+            working with JavaScript, .NET Core, Angular, Node.js, Express,
+            HTML, CSS, and Git. I am a quick learner and I am always
             looking to expand my knowledge and skill set. I am a team player and
             I am excited to work with others to create amazing applications.
           </p>
