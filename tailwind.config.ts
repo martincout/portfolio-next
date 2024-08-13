@@ -18,8 +18,10 @@ const config: Config = {
     },
     colors: {
       ...colors,
-      primary: colors.green,
-      secondary: colors.blue,
+      primary: '#3A1078',
+      secondary: '#4E31AA',
+      third: '#3795BD',
+      dark: '#FFFFF'
     },
   },
   plugins: [plugin(function ({ addUtilities }) {

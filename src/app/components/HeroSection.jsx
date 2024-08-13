@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="lg:py-16">
+    <section className="xl:py-16">
     <div className="grid grid-cols-1 sm:grid-cols-12">
    
       <motion.div
@@ -16,13 +16,14 @@ const HeroSection = () => {
         transition={{ duration: 0.5 }}
         className="col-span-8 place-self-center text-center sm:text-left justify-self-center"
       >
-        <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
+        <h1 className=" mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
+          <span className="bg-gradient-to-r from-red-500 to-indigo-600 bg-clip-text text-transparent">
             Hello, I&apos;m{" "}
           </span>
           <br></br>
           <TypeAnimation
-            sequence={[
+            className="text-[#77faff]"
+            sequence={[   
               "Martin",
               5000
             ]}
@@ -31,8 +32,8 @@ const HeroSection = () => {
             speed={5}
           />
         </h1>
-        <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          A .NET Fullstack Developer for the Web.
+        <p className="text-dark text-base sm:text-lg mb-6 lg:text-xl">
+          A Full stack developer of the Web.
         </p>
         <div>
           <Link
@@ -57,7 +58,7 @@ const HeroSection = () => {
         transition={{ duration: 0.5 }}
         className="col-span-4 place-self-center mt-4 lg:mt-0"
       >
-        <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+        <div className="rounded-full bg-primary w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
           <Image
             src="/hero.png"
             alt="hero image"
