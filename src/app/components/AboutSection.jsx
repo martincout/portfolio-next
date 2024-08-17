@@ -2,6 +2,7 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
+import { motion } from "framer-motion";
 
 const TAB_DATA = [
   {
@@ -52,9 +53,27 @@ const AboutSection = () => {
   };
 
   return (
-    <section  id="about">
+    <section id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about.webp" width={500} height={500} className="drag-none	rounded-3xl"/>
+        <motion.img src="/images/about.webp"
+          width={500} height={500}
+          className="drag-none rounded-3xl"
+          initial={{ scale: 0, rotate: 90 }}
+          animate={{ rotate: 0, scale: 1 }}
+          whileHover={{ scale: 1.2, rotate: 10 }}
+          whileTap={{
+            scale: 0.8,
+            rotate: -10,
+            borderRadius: "100%"
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20
+          }}
+        >
+        </motion.img>
+        {/* <Image src="/images/about.webp" width={500} height={500} className="drag-none	rounded-3xl"/> */}
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold mb-4">About Me</h2>
           <p className="text-base lg:text-lg">

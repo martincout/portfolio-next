@@ -59,8 +59,15 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <div>
-          <h1>Socials</h1>
+        <div className="flex flex-row items-center gap-3">
+        <Link href="https://github.com/martincout" target="_blank">
+            <Image src="/github-mark-white.png" width={30}  height={30}
+                  alt="Github Icon" />
+          </Link>
+          <Link href="https://www.linkedin.com/in/martincout" target="_blank">
+            <Image src="/linkedin.png" width={30}  height={30} 
+                    alt="Linkedin Icon" />
+          </Link>
         </div>
       </div>
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
