@@ -38,7 +38,7 @@ const HeroSection = () => {
           <div>
             <Link
               href="/#contact"
-              className="px-6 from-red-500 to-indigo-600   hover:bg-indigo-500 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 text-white"
+              className="px-6 from-red-500 to-indigo-600 transition-all ease-in-out hover:-translate-y-1 hover:from-green-500 hover:to-indigo-500 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 text-white"
             >
               Contact Me
             </Link>
@@ -46,7 +46,7 @@ const HeroSection = () => {
               href="/"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
             >
-              <span className="block bg-indigo-800 hover:bg-indigo-500 rounded-full px-5 py-2">
+              <span className="block transition-transform ease-in-out hover:scale-110 bg-indigo-800 hover:bg-indigo-500 rounded-full px-5 py-2">
                 Download CV
               </span>
             </Link>

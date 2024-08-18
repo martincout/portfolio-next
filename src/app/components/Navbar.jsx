@@ -31,7 +31,7 @@ const Navbar = () => {
           href={"/"}
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          <Image src="/MC.png" width={100} height={100}/>
+          <Image className="transition hover:-translate-y-1 hover:scale-125" src="/MC.png" width={100} height={100}/>
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
@@ -50,7 +50,7 @@ const Navbar = () => {
             </button>
           )}
         </div>
-        <div className="menu hidden md:block md:w-auto bg-secondary h-10 rounded-lg px-10" id="navbar">
+        <div className="menu hidden md:block md:w-auto bg-gradient-to-r from-[#4e31aa] to-[#ea4449] h-10 rounded-lg px-10" id="navbar">
           <ul className="flex items-center p-4 md:p-0 md:flex-row md:space-x-8 mt-0 h-full">
             {navLinks.map((link, index) => (
               <li key={index}>
@@ -60,11 +60,11 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex flex-row items-center gap-3">
-        <Link href="https://github.com/martincout" target="_blank">
+        <Link className="transition hover:-translate-y-1" href="https://github.com/martincout" target="_blank">
             <Image src="/github-mark-white.png" width={30}  height={30}
                   alt="Github Icon" />
           </Link>
-          <Link href="https://www.linkedin.com/in/martincout" target="_blank">
+          <Link className="transition hover:-translate-y-1" href="https://www.linkedin.com/in/martincout" target="_blank">
             <Image src="/linkedin.png" width={30}  height={30} 
                     alt="Linkedin Icon" />
           </Link>

@@ -21,7 +21,7 @@ const config: Config = {
       primary: '#3A1078',
       secondary: '#4E31AA',
       third: '#3795BD',
-      dark: '#FFFFF'
+      background: '#170132'
     },
   },
   plugins: [plugin(function ({ addUtilities }) {

@@ -4,11 +4,11 @@ const NavLink = ({ href, title }) => {
   return (
     <Link
       href={href}
-      className="block py-2 pl-3 pr-4 text-white sm:text-xl 
+      className="block py-2 pl-3 pr-4 text-white sm:text-xl transition hover:scale-110
        md:p-0 
       "
     >
-      <div className="hover:bg-indigo-400 rounded-lg transition p-1 
+      <div className="hover:bg-red-500/60 rounded-xl transition p-1 
                         ease-in-out delay-10">
         {title}</div>
       
