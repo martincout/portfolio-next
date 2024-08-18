@@ -31,9 +31,9 @@ const Navbar = () => {
           href={"/"}
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          <Image className="transition hover:-translate-y-1 hover:scale-125" src="/MC.png" width={100} height={100}/>
+          <Image className="transition hover:-translate-y-1 hover:scale-125 h-11" src="/MC.png" width={100} height={100}/>
         </Link>
-        <div className="mobile-menu block md:hidden">
+        <div className="mobile-menu block md:hidden order-3">
           {!navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(true)}
@@ -59,7 +59,7 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <div className="flex flex-row items-center gap-3">
+        <div className="flex flex-row items-center gap-3 order-1">
         <Link className="transition hover:-translate-y-1" href="https://github.com/martincout" target="_blank">
             <Image src="/github-mark-white.png" width={30}  height={30}
                   alt="Github Icon" />
