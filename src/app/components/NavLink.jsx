@@ -8,7 +8,7 @@ const NavLink = ({ href, title }) => {
        md:p-0 
       "
     >
-      <div className="hover:bg-red-500/60 rounded-xl transition p-1 
+      <div className=" rounded-xl transition p-1 
                         ease-in-out delay-10">
         {title}</div>
       

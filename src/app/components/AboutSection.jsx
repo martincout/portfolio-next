@@ -27,6 +27,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Fullstack Academy of Code (Platzi)</li>
+        <li>Udemy Angular Course (Udemy)</li>
         <li>Northeast National University UNNE, Corrientes</li>
       </ul>
     ),
@@ -36,8 +37,7 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li><a href="https://cert.efset.org/tuBKhT" target="_blank">EF SET English Certificate C2</a></li>
       </ul>
     ),
   },
@@ -59,14 +59,6 @@ const AboutSection = () => {
         <motion.img src="/images/about.webp"
           width={500} height={500}
           className="drag-none rounded-3xl"
-          initial={{ scale: 0, rotate: 90 }}
-          animate={{ rotate: 0, scale: 1 }}
-          whileHover={{ scale: 1.2, rotate: 10 }}
-          whileTap={{
-            scale: 0.8,
-            rotate: -10,
-            borderRadius: "100%"
-          }}
           transition={{
             type: "spring",
             stiffness: 260,

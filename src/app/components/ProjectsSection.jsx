@@ -9,7 +9,7 @@ const projectsData = [
     id: 1,
     title: "React Portfolio Website",
     description: "A simple portfolio with Next.js",
-    image: "/images/landscape-placeholder.png",
+    image: "/images/projects/portfolio.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
@@ -17,48 +17,21 @@ const projectsData = [
   {
     id: 2,
     title: "Castle Keys - Unity",
-    description: "An adventure game.",
-    image: "/images/landscape-placeholder.png",
+    description: "An adventure game made with Unity 3D.",
+    image: "/images/projects/castlekeys.png",
     tag: ["All", "Mobile"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "https://martincou.itch.io/castle-keys",
   },
   {
     id: 3,
     title: "Bootcamp Page 2.0",
-    description: "Project 3 description",
-    image: "/images/landscape-placeholder.png",
+    description: "Project made with HTML, JS, CSS.",
+    image: "/images/projects/bootcamp.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/landscape-placeholder.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/landscape-placeholder.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/landscape-placeholder.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
+    gitUrl: "https://github.com/martincout/ConferenciaWeb",
+    previewUrl: "https://martincout.github.io/ConferenciaWeb",
+  }
 ];
 
 const ProjectsSection = () => {
@@ -117,6 +90,7 @@ const ProjectsSection = () => {
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
+              
             />
           </motion.li>
         ))}

@@ -33,7 +33,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-dark text-base sm:text-lg mb-6 lg:text-xl">
-            A Full stack developer of the Web.
+            A Full Stack Developer for the Web and Software.
           </p>
           <div>
             <Link
