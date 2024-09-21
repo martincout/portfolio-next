@@ -1,6 +1,8 @@
 import type { Config } from "tailwindcss";
+import { PluginAPI } from 'tailwindcss/types/config';
 const colors = require("tailwindcss/colors");
 const plugin = require('tailwindcss/plugin');
+
 
 const config: Config = {
   content: [
@@ -24,7 +26,7 @@ const config: Config = {
       background: '#170132'
     },
   },
-  plugins: [plugin(function ({ addUtilities }) {
+  plugins: [plugin(function ({ addUtilities }: PluginAPI) {
     addUtilities({
       '.drag-none': {
         '-webkit-user-drag': 'none',
