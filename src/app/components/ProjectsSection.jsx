@@ -7,6 +7,15 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
+    title: "E-Commerce Website - React",
+    description: "A simple e-commerce website made with React.",
+    image: "/images/projects/e-commerce.png",
+    tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "https://magenta-brioche-d6ebd4.netlify.app/",
+  },
+  {
+    id: 2,
     title: "React Portfolio Website",
     description: "A simple portfolio with Next.js",
     image: "/images/projects/portfolio.png",
@@ -15,7 +24,7 @@ const projectsData = [
     previewUrl: "/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Castle Keys - Unity",
     description: "An adventure game made with Unity 3D.",
     image: "/images/projects/castlekeys.png",
@@ -24,7 +33,7 @@ const projectsData = [
     previewUrl: "https://martincou.itch.io/castle-keys",
   },
   {
-    id: 3,
+    id: 4,
     title: "Bootcamp Page 2.0",
     description: "Project made with HTML, JS, CSS.",
     image: "/images/projects/bootcamp.png",
