@@ -54,8 +54,8 @@ const AboutSection = () => {
   };
 
   return (
-    <section id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+    <section id="about" className="text-white ">
+      <div className="bg-[#548fe2] p-8 rounded-lg shadow-md md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <motion.img src="/images/about.webp"
           width={500} height={500}
           className="drag-none rounded-3xl"

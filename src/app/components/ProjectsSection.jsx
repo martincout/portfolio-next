@@ -7,7 +7,7 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "E-Commerce Website - React",
+    title: "E-Commerce Website",
     description: "A simple e-commerce website made with React.",
     image: "/images/projects/e-commerce.png",
     tag: ["All", "Web"],
@@ -16,16 +16,7 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "React Portfolio Website",
-    description: "A simple portfolio with Next.js",
-    image: "/images/projects/portfolio.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 3,
-    title: "Castle Keys - Unity",
+    title: "Castle Keys - Unity 3D",
     description: "An adventure game made with Unity 3D.",
     image: "/images/projects/castlekeys.png",
     tag: ["All", "Mobile"],
@@ -33,7 +24,7 @@ const projectsData = [
     previewUrl: "https://martincou.itch.io/castle-keys",
   },
   {
-    id: 4,
+    id: 3,
     title: "Bootcamp Page 2.0",
     description: "Project made with HTML, JS, CSS.",
     image: "/images/projects/bootcamp.png",
@@ -63,10 +54,10 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+      <h2 className="text-center text-4xl font-bold text-black mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+      <div className="text-black flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
           onClick={handleTagChange}
           name="All"

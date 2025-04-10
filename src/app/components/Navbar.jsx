@@ -50,7 +50,7 @@ const Navbar = () => {
             </button>
           )}
         </div>
-        <div className="menu hidden md:block md:w-auto bg-gradient-to-r from-[#4e31aa] to-[#ea4449] h-10 rounded-lg px-10" id="navbar">
+        <div className="menu hidden md:block md:w-auto bg-gradient-to-r from-primary to-[#67eea4] h-10 rounded-lg px-10" id="navbar">
           <ul className="flex items-center p-4 md:p-0 md:flex-row md:space-x-8 mt-0 h-full">
             {navLinks.map((link, index) => (
               <li key={index}>
