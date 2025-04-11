@@ -1,0 +1,13 @@
+{
+  "Navbar": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "HeroSection": {
+    "hello": "Hello, I'm",
+    "subtext": "A Full Stack Developer for the Web and Mobile.",
+    "contact": "Contact Me",
+    "resume": "Download Resume"
+  }
+}

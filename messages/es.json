@@ -1,0 +1,13 @@
+{
+  "Navbar": {
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "HeroSection": {
+    "hello": "Hola, soy",
+    "subtext": "Un Full-Stack developer de software para la web y móvil.",
+    "contact": "Contactame",
+    "resume": "Descargar CV"
+  }
+}

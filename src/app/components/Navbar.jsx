@@ -5,24 +5,26 @@ import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
 import Image from "next/image"
-
-const navLinks = [
-  {
-    title: "About",
-    path: "#about",
-  },
-  {
-    title: "Projects",
-    path: "#projects",
-  },
-  {
-    title: "Contact",
-    path: "#contact",
-  },
-];
+import { useTranslations } from "next-intl";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const t = useTranslations('Navbar');
+  
+  const navLinks = [
+    {
+      title: t('about'),
+      path: "#about",
+    },
+    {
+      title: t('projects'),
+      path: "#projects",
+    },
+    {
+      title: t('contact'),
+      path: "#contact",
+    },
+  ];
 
   return (
     <nav className="fixed mx-auto top-0 left-0 right-0 z-10 bg-primary bg-opacity-100">
