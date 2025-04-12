@@ -9,5 +9,25 @@
     "subtext": "Un Full-Stack developer de software para la web y móvil.",
     "contact": "Contactame",
     "resume": "Descargar CV"
+  },
+  "AboutMe":{
+    "title": "Sobre Mi",
+    "description": "Soy un apasionado desarrollador full-stack con un enfoque en la creación de aplicaciones web dinámicas y responsivas. ",
+    "description2": "Tengo experiencia trabajando con JavaScript, .NET Core, Angular, Node.js, Express, HTML, CSS y Git. Aprendo rápido y siempre estoy buscando ampliar mis conocimientos y habilidades. Soy un jugador de equipo y estoy emocionado de trabajar con otros para crear aplicaciones increíbles.",
+    "workedWith": "Tecnologias"
+  },
+  "Projects":{
+    "title": "Proyectos recientes"
+  },
+  "Contact": {
+    "title": "Contactame",
+    "description": "Siempre estoy buscando nuevos retos, mi bandeja de entrada está abierta. ",
+    "description2": "Si tienes alguna pregunta o simplemente quieres saludarme, ¡haré todo lo posible por responderte!",
+    "form": {
+      "name": "Name",
+      "email": "contact@martincoutinho.com",
+      "message": "Message",
+      "send": "Send"
+    }
   }
 }

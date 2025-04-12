@@ -3,6 +3,7 @@ import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const projectsData = [
   {
@@ -38,6 +39,7 @@ const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  const t = useTranslations("Projects");
 
   const handleTagChange = (newTag) => {
     setTag(newTag);
@@ -54,8 +56,8 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-black mt-9 mb-8 md:mb-12">
-        My Projects
+      <h2 className="text-center text-2xl  md:text-4xl font-bold underline text-black mt-12 md:mb-12">
+        {t("title")}
       </h2>
       <div className="text-black flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag

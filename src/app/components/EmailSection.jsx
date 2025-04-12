@@ -2,10 +2,11 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
-
+  const t = useTranslations('Contact');
   const handleSubmit = async (e) => {
     e.preventDefault();
     const data = {
@@ -39,7 +40,7 @@ const EmailSection = () => {
 
   return (
     <div className="flex flex-col">
-      <h5 className="text-center pt-16 pb-5 text-4xl font-bold underline " >Contact</h5>
+      <h5 className="text-center pt-16 pb-5 text-4xl font-bold underline " >{t('title')}</h5>
       <section
         id="contact"
         className="grid md:grid-cols-2 my-12 md:my-12 pb-24 gap-4 relative"
@@ -51,9 +52,8 @@ const EmailSection = () => {
           </h5>
           <p className="mb-4 max-w-md">
             {" "}
-            I&apos;m currently looking for new challenges, my inbox is always
-            open. Whether you have a question or just want to say hi, I&apos;ll
-            try my best to get back to you!
+            {t("description")} <br /> <br />
+            {t("description2")}
           </p>
           <div className="socials flex flex-row gap-2">
             <Link href="https://github.com/martincout" target="_blank">

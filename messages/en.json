@@ -9,5 +9,25 @@
     "subtext": "A Full Stack Developer for the Web and Mobile.",
     "contact": "Contact Me",
     "resume": "Download Resume"
+  },
+  "AboutMe":{
+    "title": "About Me",
+    "description": "I am a passionate full-stack developer with a focus on creating dynamic and responsive web applications. ",
+    "description2": "I have experience working with JavaScript, .NET Core, Angular, Node.js, Express, HTML, CSS, and Git. I am a quick learner and I am always looking to expand my knowledge and skill set. I am a team player and I am excited to work with others to create amazing applications.",
+    "workedWith": "Worked with"
+  },
+  "Projects":{
+    "title": "Recent Projects"
+  },
+  "Contact": {
+    "title": "Contact Me",
+    "description": "I'm currently looking for new challenges, my inbox is always open.",
+    "description2": "Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+    "form": {
+      "name": "Name",
+      "email": "contact@martincoutinho.com",
+      "message": "Message",
+      "send": "Send"
+    }
   }
 }
