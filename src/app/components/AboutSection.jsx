@@ -75,7 +75,7 @@ const AboutSection = () => {
     },
     {
       title: "Node JS",
-      image: "/images/logos/node.js.png",
+      image: "/images/logos/Node.js.png",
     },
     {
       title: "SQL Server",
@@ -83,7 +83,7 @@ const AboutSection = () => {
     },
     {
       title: "Git",
-      image: "/images/logos/Github.png",
+      image: "/images/logos/GitHub.png",
     },
     {
       title: "Bitbucket",
