@@ -66,6 +66,12 @@ const EmailSection = () => {
             </Link>
           </div>
         </div>
+        <div>
+          <div className="">
+            <h1 className="font-underline"><b>Email</b></h1>
+            <a href="mailto:contact@martincoutinho.com" className="text-primary">contact@martincoutinho.com</a>
+            </div>
+        </div>
         {/* <div>
           {emailSubmitted ? (
             <p className="text-green-500 text-sm mt-2">

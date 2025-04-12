@@ -24,6 +24,7 @@ const config: Config = {
       secondary: '#81DE76',
       third: '#ccff8c',
       background: '#170132',
+      white: '#F4F4F4',
     },
   },
   plugins: [plugin(function ({ addUtilities }: PluginAPI) {

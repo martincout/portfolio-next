@@ -47,63 +47,81 @@ const AboutSection = () => {
   const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
 
-  const handleTabChange = (id) => {
-    startTransition(() => {
-      setTab(id);
-    });
-  };
+  const Technologies = [
+    {
+      title: "Azure",
+      image: "/images/logos/Azure.png",
+    },
+    
+    {
+      title: "Azure SQL Database",
+      image: "/images/logos/Azure SQL Database.png",
+    },
+    {
+    title: "React",
+    image: "/images/logos/React.png",
+    },
+    {
+      title: "Angular",
+      image: "/images/logos/angular.png",
+    },
+    {
+      title: ".NET Core",
+      image: "/images/logos/NETCore.png",
+    },
+    {
+      title: "Figma",
+      image: "/images/logos/Figma.png",
+    },
+    {
+      title: "Node JS",
+      image: "/images/logos/node.js.png",
+    },
+    {
+      title: "SQL Server",
+      image: "/images/logos/sqlserver.png",
+    },
+    {
+      title: "Git",
+      image: "/images/logos/Github.png",
+    },
+    {
+      title: "Bitbucket",
+      image: "/images/logos/BitBucket.png",
+    },
+    {
+      title: "Power BI",
+      image: "/images/logos/PowerBi.png",
+    },
+]
+
 
   return (
-    <section id="about" className="text-white ">
-      <div className="bg-[#548fe2] p-8 rounded-lg shadow-md md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <motion.img src="/images/about.webp"
-          width={500} height={500}
-          className="drag-none rounded-3xl"
-          transition={{
-            type: "spring",
-            stiffness: 260,
-            damping: 20
-          }}
-        >
-        </motion.img>
-        {/* <Image src="/images/about.webp" width={500} height={500} className="drag-none	rounded-3xl"/> */}
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+    <section id="about" className="">
+      <div className="flex rounded-lg shadow-blue-500/50 shadow-lg flex flex-col  md:grid md:grid-cols-2 gap-8 items-start justify-center
+ py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 ">
+      <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold mb-4">About Me</h2>
-          <p className="text-base lg:text-lg">
+          <p className="text-base lg:text-lg text-justify">
             I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, .NET Core, Angular, Node.js, Express,
+            interactive and responsive web applications. <br /><br />
+            I have experience working with JavaScript, .NET Core, Angular, Node.js, Express,
             HTML, CSS, and Git. I am a quick learner and I am always
             looking to expand my knowledge and skill set. I am a team player and
             I am excited to work with others to create amazing applications.
           </p>
-          <div className="flex flex-row justify-start mt-8">
-            <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
-            >
-              {" "}
-              Skills{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
-            >
-              {" "}
-              Education{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
-            >
-              {" "}
-              Certifications{" "}
-            </TabButton>
-          </div>
-          <div className="mt-8">
-            {TAB_DATA.find((t) => t.id === tab).content}
-          </div>
+
         </div>
+        <motion.div>
+          <h2 className="text-4xl font-bold mb-4 text-primary">Worked With</h2>
+          <div className="flex flex-none flex-wrap gap-2">
+            {Technologies.map((tech, index) => (
+              <motion.img className="drag-none" width={50} height={50} 
+              alt={tech.title} key={index} title={tech.title} src={tech.image} />
+            ))}
+          </div>
+        </motion.div>
+
       </div>
     </section>
   );
