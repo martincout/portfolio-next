@@ -23,7 +23,7 @@ const HeroSection = () => {
           className="col-span-8 place-self-center text-center sm:text-left justify-self-center"
         >
           <h1 className="mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold select-none">
-            <span className="bg-gradient-to-r from-[#3A8DFF] to-secondary bg-clip-text text-transparent">
+            <span className=" bg-gradient-to-r from-[#3A8DFF] to-secondary bg-clip-text text-transparent">
               {t('hello')}
               
             </span>
@@ -39,7 +39,7 @@ const HeroSection = () => {
               speed={5}
             />
           </h1>
-          <p className="text-dark text-base sm:text-lg mb-6 lg:text-xl text-black">
+          <p className="text-dark dark:text-white text-base sm:text-lg mb-6 lg:text-xl text-black">
             {t('subtext')}
           </p>
           <div>

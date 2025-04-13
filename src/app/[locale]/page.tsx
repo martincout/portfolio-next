@@ -6,21 +6,22 @@ import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import ProjectsSection from "../components/ProjectsSection"
 import EmailSection from "../components/EmailSection"
-import AchievementsSection from "../components/AchievementsSection"
-import { useTranslations } from "next-intl";
+import { ThemeProvider } from "../components/ThemeProvider";
 
 export default function Home() {
-  const t = useTranslations('HomePage');
   return (
-    <main className="flex min-h-screen flex-col before:animated-background">
-      <Navbar />
-      <div className="container mt-24 mx-auto px-4 sm:px-6 lg:px-12 py-4">
-        <HeroSection />
-        <AboutSection />
-        <ProjectsSection />
-        <EmailSection />
-        <Footer />
-      </div> 
-    </main>
+    <ThemeProvider>
+      <main className="bg-white dark:bg-[#0F0F0F] flex min-h-screen flex-col before:animated-background">
+        <Navbar />
+        <div className="container mt-24 mx-auto px-4 sm:px-6 lg:px-12 py-4">
+          <HeroSection />
+          <AboutSection />
+          <ProjectsSection />
+          <EmailSection />
+          <Footer />
+        </div>
+      </main>
+    </ThemeProvider>
+
   );
 }

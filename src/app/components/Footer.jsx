@@ -8,7 +8,7 @@ const Footer = () => {
         <span>
           <Image src="/MC.png" width={100} height={100}/>
         </span>
-        <p className="text-black">All rights reserved.</p>
+        <p className="dark:text-white text-black">All rights reserved.</p>
       </div>
     </footer>
   );

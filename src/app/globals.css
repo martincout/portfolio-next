@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -45,3 +46,5 @@ body {
     text-wrap: balance;
   }
 }
+
+@custom-variant dark (&:where(.dark, .dark *));

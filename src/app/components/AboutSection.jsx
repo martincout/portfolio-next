@@ -102,8 +102,8 @@ const AboutSection = () => {
       <div className="flex rounded-lg shadow-blue-500/50 shadow-lg flex flex-col  md:grid md:grid-cols-2 gap-8 items-start justify-center
  py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 ">
       <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="font-bold mb-4 text-2xl md:text-4x12 text-center md:text-start">{t("title")}</h2>
-          <p className="text-base lg:text-lg text-justify">
+          <h2 className="dark:text-white font-bold mb-4 text-2xl md:text-4x12 text-center md:text-start">{t("title")}</h2>
+          <p className="text-base dark:text-white lg:text-lg text-justify">
             {t("description")} <br /> <br />
             {t("description2")}
           </p>

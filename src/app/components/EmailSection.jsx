@@ -40,17 +40,17 @@ const EmailSection = () => {
 
   return (
     <div className="flex flex-col">
-      <h5 className="text-center pt-16 pb-5 text-4xl font-bold underline " >{t('title')}</h5>
+      <h5 className="dark:text-white text-center pt-16 pb-5 text-4xl font-bold underline " >{t('title')}</h5>
       <section
         id="contact"
         className="grid md:grid-cols-2 my-12 md:my-12 pb-24 gap-4 relative"
       >
         {/* <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2 -z-1"></div> */}
         <div className="z-10">
-          <h5 className="text-4x1 font-bold  my-2">
+          <h5 className="dark:text-white text-4x1 font-bold  my-2">
             Let&apos;s Connect
           </h5>
-          <p className="mb-4 max-w-md">
+          <p className="dark:text-white mb-4 max-w-md">
             {" "}
             {t("description")} <br /> <br />
             {t("description2")}
@@ -68,8 +68,8 @@ const EmailSection = () => {
         </div>
         <div>
           <div className="">
-            <h1 className="font-underline"><b>Email</b></h1>
-            <a href="mailto:contact@martincoutinho.com" className="text-primary">contact@martincoutinho.com</a>
+            <h1 className="dark:text-white font-underline"><b>Email</b></h1>
+            <a href="mailto:contact@martincoutinho.com" className="dark:text-white text-primary">contact@martincoutinho.com</a>
             </div>
         </div>
         {/* <div>
