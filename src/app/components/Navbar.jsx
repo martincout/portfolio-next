@@ -34,7 +34,7 @@ const Navbar = () => {
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
           href={"/"}
-          className="text-2xl md:text-5xl text-white font-semibold"
+          className="text-2xl md:text-5xl text-white font-semibold hidden md:block"
         >
           <Image className="transition hover:-translate-y-1 hover:scale-125 h-11" src="/MC.png" width={100} height={100} />
         </Link>
