@@ -32,12 +32,12 @@ const Navbar = () => {
   return (
     <nav className="dark:bg-[#1C1C1C] fixed mx-auto top-0 left-0 right-0 z-10 bg-primary bg-opacity-100">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
-        <Link
+        {/* <Link
           href={"/"}
           className="text-2xl md:text-5xl text-white font-semibold"
         >
           <Image className="transition hover:-translate-y-1 hover:scale-125 h-11" src="/MC.png" width={100} height={100} />
-        </Link>
+        </Link> */}
         <div className="mobile-menu block md:hidden order-3">
           {!navbarOpen ? (
             <button
@@ -55,7 +55,7 @@ const Navbar = () => {
             </button>
           )}
         </div>
-        <div className="menu hidden md:block md:w-auto bg-gradient-to-r from-primary to-[#67eea4] h-10 rounded-lg px-10" id="navbar">
+        <div className="menu hidden md:block md:w-auto bg-gradient-to-r from-[#67eea4] to-primary h-10 rounded-lg px-10" id="navbar">
           <ul className="flex items-center p-4 md:p-0 md:flex-row md:space-x-8 mt-0 h-full">
             {navLinks.map((link, index) => (
               <li key={index}>
