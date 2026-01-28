@@ -1,4 +1,3 @@
-'use client'
 import Image from "next/image";
 import HeroSection from "../components/HeroSection"
 import AboutSection from "../components/AboutSection"
@@ -11,7 +10,7 @@ import { ThemeProvider } from "../components/ThemeProvider";
 export default function Home() {
   return (
     <ThemeProvider>
-      <main className="bg-white dark:bg-[#0F0F0F] flex min-h-screen flex-col before:animated-background">
+      <main className="bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900 flex min-h-screen flex-col">
         <Navbar />
         <div className="container mt-24 mx-auto px-4 sm:px-6 lg:px-12 py-4">
           <HeroSection />

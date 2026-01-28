@@ -30,33 +30,28 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="dark:bg-[#1C1C1C] fixed mx-auto top-0 left-0 right-0 z-10 bg-primary bg-opacity-100">
+    <nav className="backdrop-blur-md bg-white/80 dark:bg-slate-900/90 border-b border-slate-200 dark:border-slate-800 fixed mx-auto top-0 left-0 right-0 z-10 shadow-sm">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
-        <Link
-          href={"/"}
-          className="text-2xl md:text-5xl text-white font-semibold hidden md:block"
-        >
-          <Image className="transition hover:-translate-y-1 hover:scale-125 h-11" src="/MC.png" width={100} height={100} />
-        </Link>
+        
         <div className="mobile-menu block md:hidden order-3">
           {!navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(true)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+              className="flex items-center px-3 py-2 border rounded border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 hover:border-primary-500"
             >
               <Bars3Icon className="h-5 w-5" />
             </button>
           ) : (
             <button
               onClick={() => setNavbarOpen(false)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+              className="flex items-center px-3 py-2 border rounded border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 hover:border-primary-500"
             >
               <XMarkIcon className="h-5 w-5" />
             </button>
           )}
         </div>
-        <div className="menu hidden md:block md:w-auto bg-gradient-to-r from-primary to-[#67eea4] h-10 rounded-lg px-10" id="navbar">
-          <ul className="flex items-center p-4 md:p-0 md:flex-row md:space-x-8 mt-0 h-full">
+        <div className="menu hidden md:block md:w-auto" id="navbar">
+          <ul className="flex items-center p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
             {navLinks.map((link, index) => (
               <li key={index}>
                 <NavLink href={link.path} title={link.title} />
@@ -66,8 +61,12 @@ const Navbar = () => {
         </div>
         <div className="flex flex-row items-center gap-3 order-1">
           <Link className="transition hover:-translate-y-1" href="https://github.com/martincout" target="_blank">
-            <Image src="/github-mark-white.png" width={30} height={30}
-              alt="Github Icon" />
+            <Image 
+              src={theme === 'dark' ? "/github-mark-white.png" : "/github-mark.png"} 
+              width={30} 
+              height={30}
+              alt="Github Icon" 
+            />
           </Link>
           <Link className="transition hover:-translate-y-1" href="https://www.linkedin.com/in/martincout" target="_blank">
             <Image src="/linkedin.png" width={30} height={30}
@@ -75,9 +74,9 @@ const Navbar = () => {
           </Link>
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-full bg-gray-200 dark:bg-gray-700"
+            className="p-2 rounded-full bg-slate-200 dark:bg-slate-700 hover:bg-primary-100 dark:hover:bg-primary-900 transition-colors"
           >
-            {theme === 'dark' ? <Sun color="white" size={20} /> : <Moon color="black" size={20} />}
+            {theme === 'dark' ? <Sun className="text-amber-400" size={20} /> : <Moon className="text-slate-700" size={20} />}
           </button>
         </div>
       </div>

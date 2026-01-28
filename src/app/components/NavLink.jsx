@@ -4,14 +4,11 @@ const NavLink = ({ href, title }) => {
   return (
     <Link
       href={href}
-      className="block font-bold py-2 pl-3 pr-4 text-white sm:text-xl transition hover:scale-110
-       md:p-0 
-      "
+      className="block font-semibold py-2 pl-3 pr-4 text-slate-700 dark:text-slate-200 sm:text-xl transition-all hover:text-primary-600 dark:hover:text-accent-400 hover:scale-105 md:p-0"
     >
-      <div className=" rounded-xl transition p-1 
-                        ease-in-out delay-10">
-        {title}</div>
-      
+      <div className="rounded-xl transition-all p-1 ease-in-out">
+        {title}
+      </div>
     </Link>
   );
 };
