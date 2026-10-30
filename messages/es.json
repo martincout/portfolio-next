@@ -14,6 +14,9 @@
     "title": "Sobre Mi",
     "description": "Soy un apasionado desarrollador full-stack con un enfoque en la creación de aplicaciones web dinámicas y responsivas. ",
     "description2": "Tengo experiencia trabajando con JavaScript, .NET Core, Angular, Node.js, Express, HTML, CSS y Git. Aprendo rápido y siempre estoy buscando ampliar mis conocimientos y habilidades. Soy un jugador de equipo y estoy emocionado de trabajar con otros para crear aplicaciones increíbles.",
+    "founder": "También soy el fundador de",
+    "founderCompany": "Polillagames.com",
+    "founderSuffix": ", una empresa de desarrollo de videojuegos.",
     "workedWith": "Tecnologias"
   },
   "Projects":{

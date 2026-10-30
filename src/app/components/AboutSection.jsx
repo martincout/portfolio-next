@@ -105,7 +105,12 @@ const AboutSection = () => {
           <h2 className="dark:text-white font-bold mb-4 text-2xl md:text-4x12 text-center md:text-start">{t("title")}</h2>
           <p className="text-base dark:text-white lg:text-lg text-justify">
             {t("description")} <br /> <br />
-            {t("description2")}
+            {t("description2")} <br /> <br />
+            {t("founder")}{" "}
+            <a href="https://polillagames.com" target="_blank" rel="noopener noreferrer" className="text-primary underline">
+              {t("founderCompany")}
+            </a>
+            {t("founderSuffix")}
           </p>
 
         </div>
